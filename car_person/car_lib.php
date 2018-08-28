@@ -4,6 +4,11 @@ class Car {
     var $acceleration;
     var $fuelType;
 
+    function __construct() {
+        echo 'pasileido konstruktorius';
+        $this->engine = 'V8'; 
+    }
+
     function set_engine($type) {
         $this->engine = $type;
     }
